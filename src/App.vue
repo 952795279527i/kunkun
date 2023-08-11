@@ -1,18 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <ModiFication/> -->
+    <!-- <DemoList/> -->
+    <!-- <HelloWorld/> -->
+    <!-- <NextTick/> -->
+    <!-- <Tran/> -->
+    <div class="SlotData">
+        <child-componment>
+            <div>11</div>
+        </child-componment>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+    // import HelloWorld from './components/HelloWorld.vue'
+    // import DemoList from './components/DemoList.vue';
+    // import ModiFication from './components/ModiFication.vue';
+    // import NextTick from './components/NextTick.vue'
+    // import Tran from './components/Tran.vue'
+    import SlotData from './components/SlotData.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // HelloWorld,
+    // DemoList,
+    // ModiFication
+    // NextTick
+    // Tran
+    SlotData
+  },
+  data(){
+        return {
+        message: ''
+        }
+    }
 }
 </script>
 
