@@ -1,34 +1,15 @@
 <template>
-  <div id="app">
-    <!-- <ModiFication/> -->
-    <!-- <DemoList/> -->
-    <!-- <HelloWorld/> -->
-    <!-- <NextTick/> -->
-    <!-- <Tran/> -->
-    <div class="SlotData">
-        <child-componment>
-            <div>11</div>
-        </child-componment>
-    </div>
+  <div id="app"> 
+    <HelloWorld/>
   </div>
 </template>
 
 <script>
-    // import HelloWorld from './components/HelloWorld.vue'
-    // import DemoList from './components/DemoList.vue';
-    // import ModiFication from './components/ModiFication.vue';
-    // import NextTick from './components/NextTick.vue'
-    // import Tran from './components/Tran.vue'
-    import SlotData from './components/SlotData.vue';
+    import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    // DemoList,
-    // ModiFication
-    // NextTick
-    // Tran
-    SlotData
+    HelloWorld,
   },
   data(){
         return {
@@ -39,12 +20,16 @@ export default {
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
